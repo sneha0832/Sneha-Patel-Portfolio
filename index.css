@@ -1,0 +1,249 @@
+body {
+    background-color: #F6EEE1;
+    color: black;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+#fullName{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#my_name{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+/* Left text box */
+#aboutText {
+    flex: 1 1 600px;
+    padding: 90px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 300px;
+}
+
+/* Right green frame */
+#aboutFrame {
+    flex: 1 1 400px;
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: start;
+    min-width: 368px;
+}
+/* Intro text */
+#intro {
+    padding-top: 40px;
+    text-align: left;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* Green box inside aboutFrame */
+#aboutFrame > div {
+    background-color: #334B35;
+    width: 368px;
+    height: 600px;
+    margin-bottom: 50px;;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+#circle{
+    margin-top: 60px;
+    height: 249px;
+    width: 249px;
+    border-radius: 50%;
+    background-color: #F6EEE1;
+    display: flex;
+    justify-content: center;
+}
+
+#avatar{
+    height: 270px;
+}
+
+#box{
+    background-color: #FDAD16;
+    height: 241px;
+    width: 300px;
+    margin-top: 21px;
+    border-radius: 30px;
+
+}
+#contact{
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 35px;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact>ul{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 35px;
+}
+
+  
+/* Name styling */
+#name {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    text-align: left;
+    margin-top: 80px;
+}
+#contact ul li  a:link{
+    color: black;
+    text-decoration: none;
+}
+#contact ul li a:visited{
+    color: black;
+}
+
+
+
+@media (max-width: 1250px) {
+    #name {
+        font-size: 70px;
+        margin-top: 40px;
+    }
+
+    #aboutText{
+        padding-top: 30px;
+    }
+
+    #aboutFrame {
+        margin: 0px;
+        padding-top: 0px;
+    }
+
+    #aboutFrame > div {
+        width: 100%;
+        max-width: 368px;
+    }
+}
+
+/****Menu*****/
+
+
+#container{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+nav{
+    background-color: #334B35;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 20px 25px -20px rgba(0,0,0, 0.4);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 12px 35px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F6EEE1;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+nav ul li::after{
+    content: '';
+    background-color: #FDAD16;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ;
+}
+
+nav ul li:hover{
+    color: #334B35;
+}
+
+nav ul li:hover::after{
+    opacity: 1;
+
+}
+nav ul li a {
+    color: #F6EEE1;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+nav ul li:hover a {
+    color: #334B35;
+}
+
+nav ul li:hover::after {
+    top: 50%;
+    opacity: 1;
+}
+
+/*********/
+
+/****Menu*****/
+
+#educationSection{
+    border: 3px solid;
+    height: 900px;
+    width: auto;
+}
+
+#education_name{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    padding-left: 100px;
+    margin-top: 20px;;
+}
+
+
+
+/*********/
