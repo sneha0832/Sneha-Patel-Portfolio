@@ -26,13 +26,14 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     gap: 30px;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 /* Left text box */
 #aboutText {
     flex: 1 1 600px;
-    padding: 90px;
+    padding-left: 90px;
+    padding-right: 70px;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -48,6 +49,7 @@ body {
     justify-content: center;
     align-items: start;
     min-width: 368px;
+
 }
 /* Intro text */
 #intro {
@@ -143,7 +145,7 @@ ul{
 
     #aboutFrame {
         margin: 0px;
-        padding-top: 0px;
+        padding-top: 20px;
     }
 
     #aboutFrame > div {
@@ -227,11 +229,10 @@ nav ul li:hover::after {
 
 /*********/
 
-/****Menu*****/
+/**** Education *****/
 
 #educationSection{
-    border: 3px solid;
-    height: 900px;
+    height: auto;
     width: auto;
 }
 
@@ -239,11 +240,122 @@ nav ul li:hover::after {
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 70px;
+    font-size: 60px;
     padding-left: 100px;
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 
+#degree{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#date{
+    display: inline-flex;
+}
+#date>img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+#date>div{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+
+#university{
+    padding-left: 30px;
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+#course{
+    margin-left: 110px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+#course>span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 1005px){
+
+    #university{
+        padding-top: 0px;
+        padding-left: 110px;
+        padding-bottom: 10px;
+    }
+}
+
+/*********/
+
+/**** languages and Frameworks *****/
+#Skills{
+    height: 900px;
+}
+
+#Skills>div>span{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    padding-left: 100px;
+    margin-top: 20px;
+
+}
+
+#lang{
+    display: inline-flex;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+#lang>img{
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+#lang>div{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+#lang2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-left: 150px;
+    margin-top: 30px;
+    border: 2px solid;   
+    padding: 10px;
+}
+
+#lang2>div{
+    height: 30px;
+    width: 30px;
+    border: 2px solid;
+}
 
 
 /*********/
