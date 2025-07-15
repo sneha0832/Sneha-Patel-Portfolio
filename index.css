@@ -3,6 +3,7 @@ body {
     color: black;
     margin: 0;
     font-family: "Inter", sans-serif;
+    
 }
 
 #fullName{
@@ -14,8 +15,8 @@ body {
 #my_name{
     padding-top: 10px;
     padding-left: 10px;
-    font-family: "Racing Sans One", sans-serif;
-    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-weight: bolder;
     font-style: normal;
     font-size: 35px;
 }
@@ -54,6 +55,7 @@ body {
 /* Intro text */
 #intro {
     padding-top: 40px;
+    font-family: "Libre Caslon Display", serif;
     text-align: left;
     font-size: 20px;
     font-optical-sizing: auto;
@@ -95,7 +97,7 @@ body {
 
 }
 #contact{
-    font-family: "Racing Sans One", sans-serif;
+     font-family: "Libre Caslon Display", serif;
     font-size: 35px;
     padding-top: 15px;
     padding-left: 25px;
@@ -109,14 +111,14 @@ ul{
 #contact>ul{
     padding-top: 10px;
     font-size: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: "DM Serif Display", serif;
     line-height: 35px;
 }
 
   
 /* Name styling */
 #name {
-    font-family: "Racing Sans One", sans-serif;
+    font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 100px;
@@ -237,7 +239,7 @@ nav ul li:hover::after {
 }
 
 #education_name{
-    font-family: "Racing Sans One", sans-serif;
+    font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
@@ -257,14 +259,12 @@ nav ul li:hover::after {
     display: inline-flex;
 }
 #date>img{
-    width: 50px;
-    height: 50px;
     margin-left: 30px;
     padding-top: 25px;
     padding-right: 20px;
 }
 #date>div{
-    font-family: "Racing Sans One", sans-serif;
+     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
@@ -274,12 +274,14 @@ nav ul li:hover::after {
 
 
 #university{
+    font-family: "Libre Caslon Display", serif;
     padding-left: 30px;
     padding-top: 35px;
     font-size: 20px;
 }
 
 #course{
+    font-family: "Libre Caslon Display", serif;
     margin-left: 110px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -309,7 +311,7 @@ nav ul li:hover::after {
 }
 
 #Skills>div>span{
-    font-family: "Racing Sans One", sans-serif;
+    font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
@@ -325,36 +327,68 @@ nav ul li:hover::after {
 }
 
 #lang>img{
-    width: 50px;
-    height: auto;
     margin-left: 30px;
     padding-top: 25px;
     padding-right: 20px;
 }
 
 #lang>div{
-    font-family: "Racing Sans One", sans-serif;
+    font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 500;
     padding-top: 30px;
     padding-left: 10px;
 }
 
 #lang2{
     display: flex;
+    font-family: "Libre Caslon Display", serif;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 10px;
     margin-left: 150px;
+    margin-right: 20px;
     margin-top: 30px;
-    border: 2px solid;   
     padding: 10px;
+    font-size: 25px;
+    line-height: 35px;
+}
+#lang3{
+    display: inline-flex;
+    margin-top: 30px;
+    padding-left: 30px;
 }
 
-#lang2>div{
-    height: 30px;
-    width: 30px;
+#lang3>img{
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+#lang3>div{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+#lang4{
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid;
+    margin-left: 150px;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    gap: 30px;
+}
+#lang4>img{
+    filter: drop-shadow(3px 7px 6px rgba(0,0,0,0.18));
 }
 
 
