@@ -988,14 +988,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Text */
-.polaroid-title {
-    font-family:  "IBM Plex Mono", monospace;
-    font-size: 21px;
-    font-weight: 500;
-    margin: 0;
-}
-
 .polaroid-text {
     font-family: "IBM Plex Mono", monospace;
     font-size: 13px;
@@ -1003,6 +995,13 @@ footer {
     margin-top: 6px;
 }
 
+/* Text */
+.polaroid-title {
+    font-family:  "IBM Plex Mono", monospace;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+}
 /* Tape */
 .tape {
     position: absolute;
