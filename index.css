@@ -8,9 +8,9 @@
 @font-face {
     font-family: "MyCustomFont";
     src:
-      url("./fonts/Historia-Sky.woff2") format("woff2"),
-      url("./fonts/Historia-Sky.woff") format("woff"),
-      url("./fonts/Historia-Sky.ttf") format("truetype");
+      url("./historia_sky/Historia-Sky.woff2") format("woff2"),
+      url("./historia_sky/Historia-Sky.woff") format("woff"),
+      url("./historia_sky/Historia-Sky.ttf") format("truetype");
     font-display: swap;
   }
 * {
