@@ -7,7 +7,7 @@ body {
 }
 
 @font-face {
-    font-family: "MyCustomFont";
+    font-family: "Historia Sky";
     src:
       url("./historia_sky/Historia-Sky.woff2") format("woff2"),
       url("./historia_sky/Historia-Sky.woff") format("woff"),
