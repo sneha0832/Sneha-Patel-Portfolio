@@ -38,7 +38,7 @@ This project emphasizes:
 
 ## 🌐 Live Site
 
-🔗 View Portfolio
+🔗 [View Portfolio](https://sneha0832.github.io/Sneha-Patel-Portfolio/)
 
 ## 👩‍💻 Author
 
