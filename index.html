@@ -1,130 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Patel</title>
+    <title>Sneha Patel | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const wrapper = document.querySelector(".polaroid-wrapper");
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                // Double-check screen size when the element enters view
+                if (entry.isIntersecting && window.innerWidth > 1000) {
+                    wrapper.classList.add("animate");
+                    observer.disconnect(); 
+                }
+            },
+            { threshold: 0.2 } // Triggers when 20% of the section is visible
+        );
+
+        if (wrapper) {
+            observer.observe(wrapper);
+        }
+    });
+</script>
 <body>
-    <div id="container">
-        <nav>
-            <ul>
-                <li><a href="#fullName">About Me</a></li>
-                <li><a href="#educationSection">Education</a></li>
-                <li>Experience</li>
-                <li>Projects</li>
-            </ul>
-        </nav>
-    </div>
 
-    <div id="fullName">
-        <div><img src="img/sparkle.png" ></div>
-       
+    <header class="hero">
+        <header class="hero">
+            <div class="decor-container left">
+                <div class="placeholder item-laptop"></div>
+                <div class="placeholder item-glasses"></div>
+                <div class="placeholder item-bag"></div>
+                <div class="placeholder item-airpods"></div>
+                <div class="placeholder item-laneige"></div>
+                <div class="placeholder item-clip"></div>
+            </div>
+        
+            <div class="hero-text">
+                <h1>Sneha Patel</h1>
+                <p>a computer science student focused on building clean, efficient, and user-centered digital solutions.</p>
+                <div class="social-icons">
+                    <a href="mailto:sneha08305@gmail.com" aria-label="Email">
+                        <img src="images_1/mail.png" alt="Email" class="icon">
+                      </a>
+                    <a href="https://www.linkedin.com/in/sneha-patel-1a5b54269/"><img src="images_1/linkedin.png" class="icon"></a> 
+                    <a href="https://github.com/sneha0832"><img src="images_1/github.png" class="icon"></a>
+                </div>
+                <div class="down-arrow">
+                    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+                    <dotlottie-wc src="https://lottie.host/5a076c96-90d0-4613-ab21-7d9803775bf0/DiAqCos2UV.lottie" style="width: 50px;height: 50px" autoplay loop></dotlottie-wc>
+                </div>
+            </div>
+        
+            <div class="decor-container right">
+                <div class="placeholder item-camera"></div>
+                <div class="placeholder item-backpack"></div>
+                <div class="placeholder item-tablet"></div>
+                <div class="placeholder item-candle"></div>
+                <div class="placeholder item-dumbbell"></div>
+                <div class="placeholder item-applepencil"></div>
+            </div>
+        </header>
+    </header>
+
+    <section class="section education-polaroid">
+        <h2 class="section-title">Education</h2>
     
-    </div>
-
-    <div id = "aboutMe">
-        <div id = "aboutText">
-         <div id = "name">
-            Hello, <br>
-            I'm Sneha Patel!
-         </div>
-         <div id = "intro" >I'm a passionate and curious Computer Science student with a strong creative 
-            edge. My interests lie at the intersection of technology and design, where I enjoy building 
-            digital experiences that are not only functional but also thoughtfully crafted and visually 
-            engaging. Whether it's designing intuitive interfaces, developing interactive web applications, 
-            or experimenting with emerging technologies, I find joy in the process of bringing ideas to life. 
-            I'm always eager to explore new tools, learn from challenges, and work on projects that solve 
-            real-world problems and leave a positive impact. With a mindset rooted in innovation and empathy, 
-            I aim to create solutions that are both technically sound and human-centered.</div>
-
+        <div class="polaroid-wrapper">
+    
+            <!-- University -->
+            <div class="polaroid rotate-left">
+                <img src="images_1/utampa logo 2.png" class="floating-logo spartan-logo">
+                <span class="tape tape-yellow"></span>
+                <img src="images_1/Utampa_name_logo.png" class="polaroid-img">
+                <p class="polaroid-title">University of Tampa</p>
+                <p class="polaroid-text">
+                    Bachelor of Science in Computer<br>
+                    Science with a minor in New Media<br>2023-2026
+                </p>
+            </div>
+    
+            <!-- Google UX -->
+            <div class="polaroid rotate-none">
+                            
+                <img src="images_1/search.png" class="floating-logo google-logo">
+                <span class="tape tape-pink"></span>
+                <img src="images_1/coursera.png" class="polaroid-img">
+                <p class="polaroid-title">Google UX Design</p>
+                <p class="polaroid-text">Certificate Program <br>2025</p>
+            </div>
+    
+            <!-- Google Student -->
+            <div class="polaroid rotate-right">
+                <img src="images_1/gdg.png" class="floating-logo gdg-logo">
+                <span class="tape tape-blue"></span>
+                <img src="images_1/google_upskilling_certificate.png" class="polaroid-img">
+                <p class="polaroid-title">Google Student Upskilling Program</p>
+                <p class="polaroid-text">2025</p>
+            </div>
+    
         </div>
-        <div id = "aboutFrame">
-            <div>
-                <div id = "circle">
-                    <img src="img/my_avatar.png" id = "avatar" alt="my_avatar">
+    </section>
+    
+    
+
+    <section class="section gray-bg" id="projects">
+        <h2 class="section-title">Design in action</h2>
+        <div class="project-grid">
+            <a href="sculptfit.html" class="project-card">
+                <div class="project-icon">
+                    <img src="images_1/gym.png" alt="SculptFit">
                 </div>
-                <div id="box">
-                    <div id ="contact">
-                        
-                        <div>Contact</div>
-                            <ul>
-                                <li><img src="img/location.png" width="23px" > Tampa, Florida</li>
-                                <li><img src="img/mail.png" width="23px" > sneha08305@gmail.com</li>
-                                <li><img src="img/linkedln.png" width="23px"> <a href = "https://www.linkedin.com/in/sneha-patel-1a5b54269/" >sneha-patel</a></li>
-                                <li><img src="img/github.png" width="23px"> <a href = "https://github.com/sneha0832">sneha08305</a></li>
-                            </ul>
-                    </div>
-                    
+                <div class="project-content">
+                    <h3>SculptFit</h3>
+                    <p>Simple, smart, social shopping</p>
                 </div>
-                
-            </div>
-            
+                <img src="images_1/link.png" class="link_icon">
+            </a>
+            <a href="snackbar.html" class="project-card">
+                <div class="project-icon">
+                    <img src="images_1/snackbar.png" alt="SnackBar">
+                </div>
+                <div class="project-content">
+                    <h3>Snack Bar</h3>
+                    <p>AI playlist of food and places</p>
+                </div>
+                <img src="images_1/link.png" class="link_icon">
+            </a>
+            <a href="Utampa_app.html" class="project-card">
+                <div class="project-icon">
+                    <img src="images_1/school.png" alt="UTampa App">
+                </div>
+                <div class="project-content">
+                    <h3>UTampa App</h3>
+                    <p>Interactive application assistant tool</p>
+                </div>
+                <img src="images_1/link.png" class="link_icon">
+            </a>
+            <a href="cs_design_projects.html" class="project-card">
+                <div class="project-content">
+                    <h3>Explore more cs and design projects</h3>
+                </div>
+                <img src="images_1/link.png" class="link_icon">
+            </a>
         </div>
-    </div>
+    </section>
 
-    <div id="educationSection">
-        <div id="education_name">Education</div>
-        <div id="degree">
-            <div id="date">
-                <img src="img/sparkle.png "  width="50px" height="auto">
-                <div>2023-2026</div>
-            </div>
-            <div id="university">
-                University of Tampa- Tampa, FL<br>
-                Bachelor of Science in Computer Science with a minor in New Media
-            </div>
-            <div id="course">
-                <span>Coursework -</span> Data Structures and Algorithms, Web Development, 
-                Object Oriented Programming (Java/Python/C++), 
-                Software Engineering/Software Design, UX/UI Design, 
-                Interactive Media / Digital Design, Operating Systems, 
-                Computer Architecture, Network Security, Discrete Mathematics, 
-                Computational Linear Algebra
-            </div>
-        </div>
-    </div>
+    <section class="section-skills-container">
 
-    <div id="Skills">
-        <div><span>Skills</span></div>
-        <div id="lang">
-            <img src="img/sparkle.png" width="50px" height="auto">
-            <div>Languages and Frameworks</div>
+        <div class="skill-center-content">
+            <h1 class="skill-title">What I bring to<br>the table</h1>
+            <p class="skill-subtitle">I design and code to make digital experiences smoother</p>
         </div>
-        <div id ="lang2">
-            <div>Python</div><div>•</div>
-            <div>Java</div><div>•</div>
-            <div>C++</div><div>•</div>
-            <div>C</div><div>•</div>
-            <div>HTML</div><div>•</div>
-            <div>CSS</div><div>•</div>
-            <div>JavaScript</div><div>•</div>
-            <div>React</div><div>•</div>
-            <div>Node.js</div><div>•</div>
-            <div>SQL</div><div>•</div>
-            <div>Git</div><div>•</div>
-            <div>Linux</div>
+        
+        <div class="skill-pill pill-1"> Agile Methodologies (Scrum and Kanban)</div>
+        <div class="skill-pill pill-2">HTML/CSS</div>
+        <div class="skill-pill pill-3">Python</div>
+        <div class="skill-pill pill-4">UX Design</div>
+        <div class="skill-pill pill-5">Java</div>
+        <div class="skill-pill pill-6">JavaScript</div>
+        <div class="skill-pill pill-7">Web Development</div>
+        <div class="skill-pill pill-8">Creative Coding</div>
+        <div class="skill-pill pill-9">Data Structures and Algorithms</div>
+        <div class="skill-pill pill-10">Interactive Media</div>
+        <div class="skill-pill pill-11">Prompt Engineering</div>
+        <div class="skill-icons-group">
+            <img src="images_1/framer.png" class="software-icon Framer" alt="Framer">
+            <img src="images_1/webflow.png" class="software-icon Webflow" alt="Webflow">
+            <img src="images_1/figma.png" class="software-icon Figma" alt="Figma">
+            <img src="images_1/adobe_photoshop.png" class="software-icon Photoshop" alt="Adobe Photoshop">
+            <img src="images_1/adobe_lillustrator.png" class="software-icon Illustrator" alt="Illustrator">
         </div>
+    
+       
+    </section>
 
-        <div id="lang3">
-            <img src="img/sparkle.png" width="50px" height="auto">
-            <div>Tools and Technologies</div>  
+    <section class="section about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-text">
+            <p>I am a <span >Computer Science </span>major with a minor in New Media at the University of Tampa, with a strong interest in creating thoughtful, user-centered digital experiences. <br><br>
+                I serve as the President of the Girls Who Code club at my university, where I enjoy organizing design workshops, coding sessions, interview preparation events, and collaborative learning spaces. <br><br>
+                I’m passionate about UX design, including user research, wireframing, and prototyping, and I enjoy exploring how technology and design come together to solve real problems.<br><br>
+                Design, for me, is about crafting experiences that people enjoy and understand effortlessly.</p>
         </div>
-        <div id="lang4">
-            <img src="img/figma.png" class="tool-img" height="50px">
-            <img src="img/adobe-photoshop.png" class="tool-img" height="50px">
-            <img src="img/adobe-illustrator.png" class="tool-img" height="50px">
-            <img src="img/asana.png" class="tool-img" height="55px">
-        </div>
-        </div>
-    </div>
+    </section>
+   </section>
 
-    <script src="index.js"></script>
+    <footer>
+        <p>© 2026 Designed by Sneha Patel</p>
+    </footer>
+
 </body>
 </html>

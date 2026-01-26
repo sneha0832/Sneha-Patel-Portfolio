@@ -1,0 +1,100 @@
+[
+    {
+        "title": "Sudoku Solver",
+        "category": "cs",
+        "description" : "Java-based Sudoku solver comparing BFS and DLS search strategies.",
+        "link": "https://github.com/swisherrr/sudoku",
+        "image":"images_1/sudoku.png"
+    },
+    {
+        "title": "Web Application",
+        "category":"cs",
+        "description":"User-friendly website showcasing exhibits, events, and visitor info.",
+        "link":"https://github.com/Ghostb9/CSC-230",
+        "image":"images_1/glazer.png"
+    },
+
+    {
+        "title": "Library Program",
+        "category":"cs",
+        "description": "Efficient sci-fi library management using optimized data structures.",
+        "link": "https://github.com/sneha0832/Library-Program",
+        "image":"images_1/library.png"
+    },
+    {
+        "title": "VR Game",
+        "category": "design",
+        "description": "VR game promoting children's rights with Unity and Blender.",
+        "link":"https://www.suzanneensmann.com/purpose2day-a-way-home.html",
+        "image":"images_1/vr_game.png"
+    },
+    {
+        "title": "VR Game",
+        "category": "cs",
+        "description": "VR game promoting children's rights with Unity and Blender.",
+        "link":"https://www.suzanneensmann.com/purpose2day-a-way-home.html",
+        "image":"images_1/vr_game.png"
+    },
+
+    {
+        "title": "SculptFit",
+        "category": "design",
+        "description": "To empower gym-goers with personalized workout plans and progress tracking.",
+        "icons": ["images_1/figma.png", "images_1/framer.png", "images_1/webflow.png"],
+        "link": "sculptfit.html",
+        "image": "images_1/gym.png"
+    },
+
+    {
+        "title": "Snack Bar",
+        "category": "design",
+        "description": "To empower gym-goers with personalized workout plans and progress tracking.",
+        "link": "snackbar.html",
+        "image": "images_1/snackbar.png"
+    },
+    
+    {
+        "title": "UTampa App",
+        "category": "design",
+        "description": "Enhancing student experience with campus navigation and resource management.",
+        "image":"images_1/school.png",
+        "link":"Utampa_app.html"
+    },
+    {
+        "title": "LIDAR Robotics",
+        "category": "cs",
+        "description": "Real-time LiDAR-based indoor mapping system with 2D visualization.",
+        "link": "https://github.com/swisherrr/2D-lidar-mapping",
+        "image":"images_1/lidar.png"
+    },
+    {
+        "title": "Illustration",
+        "category": "design",
+        "description": "Interactive HTML5 Canvas artwork using curves, gradients, and depth.",
+        "link": "https://fmx310.santiago.bz/FMX310/sp25/sneha/01%20ILLUSTRATION/boy1.html",
+        "image":"images_1/illustration.png"
+    },
+    {
+        "title": "Mandala",
+        "category":"design",
+        "description":"Personal interactive mandala using JavaScript, loops, and conditionals.",
+        "link": "https://fmx310.santiago.bz/FMX310/sp25/sneha/04%20VECTOR/sneha_mandala.html",
+        "image":"images_1/mandala.png"
+    },
+    {
+        "title": "Eternal Motion",
+        "category":"design",
+        "description": "Animated portrait with individually moving parts using math functions.",
+        "link": "https://fmx310.santiago.bz/FMX310/sp25/sneha/06%20ETERNAL/final.html",
+        "image":"images_1/eternal.png"
+    },
+    {
+        "title": "OOP Game",
+        "category": "design",
+        "description":"JavaScript OOP game with custom characters, levels, and rules.",
+        "link":"https://fmx310.santiago.bz/FMX310/sp25/sneha/08%20OOP%20GAME/final5.html",
+        "image":"images_1/game.png"
+    }
+    
+
+]

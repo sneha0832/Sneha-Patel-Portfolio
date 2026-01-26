@@ -1,0 +1,209 @@
+body {
+    background-color: #FAF7F2; /* Soft cream background */
+    font-family: 'Inter', sans-serif;  /* Serif font for headings */
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("historia_sky/Historia\ Sky.ttf") format("truetype")"),
+         url("fonts/MyFont-Regular.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    cursor: url("images_1/cursor.png") , auto;
+  }
+
+.portfolio-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header & Navigation */
+.back-button {
+    background-image: url('images_1/back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    padding: 10px 20px;
+    top: 2%;
+    left: 2%;
+}
+
+h1 {
+    font-family: "Historia Sky", serif;
+    font-size: 105px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    margin-bottom: 50px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.btn.active {
+    background-color: #C6E2FF; /* Light blue from Figma */
+    border-color: #C6E2FF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.card-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between image and text */
+}
+
+/* Style for the project image */
+.project-image {
+    width: 150px; /* Adjust size to match your mockup */
+    height: 150px;
+    object-fit: contain; /* Prevents stretching */
+    border-radius: 12px;
+    background-color: #FAF7F2; /* Gray placeholder if image is missing */
+}
+.project-image img{
+    border-radius: 10px;
+}
+.card-content {
+    position: relative;
+    z-index: 3; /* text + image always above icons */
+}
+
+/* Ensure text container takes up remaining space */
+.project-text {
+    flex: 1;
+    max-width: 420px;
+    text-align: left;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 60px;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+
+.project-card h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.project-card p {
+    font-family: 'Courier New', Courier, monospace; /* Monospace for descriptions */
+    color: #555;
+    line-height: 1.5;
+    font-style: italic;
+    z-index: 1;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    h1 { font-size: 80px; }
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;          /* THIS fixes the blue */
+    display: block;
+}
+
+.project-link * {
+    color: inherit;          /* forces all child text to inherit */
+}
+
+.project-link:hover .project-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+
+/* Base style for icons: Hidden and centered behind the card 
+.pop-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    opacity: 0;
+    z-index: 1;transform: translate(-50%, -50%) scale(0.8);
+    transition: transform 0.6s ease, opacity 0.4s ease;
+    pointer-events: none;
+    transition: all 0.6s ease;
+}
+
+.project-card .icon-1 {
+    transform: translate(150%, -600%) scale(1);
+    opacity: 1;
+}
+
+.project-card .icon-2 {
+    transform: translate(0%, -400%) scale(1);
+    opacity: 1;
+}
+
+.project-card .icon-3 {
+    transform: translate(270%, -400%) scale(1);
+    opacity: 1;
+}
+
+*/
+footer {
+    font-family: "IBM Plex Mono", monospace;
+    padding: 40px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    text-align: center;
+}
