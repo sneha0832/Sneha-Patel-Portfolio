@@ -10,7 +10,7 @@
     src:
       url("historia_sky/HistoriaSky.woff2") format("woff2"),
       url("historia_sky/HistoriaSky.woff") format("woff"),
-      url("historia_sky/HistoriaSky.ttf") format("truetype");
+      url("historia_sky/Historia_Sky.ttf") format("truetype");
     font-display: swap;
   }
 * {
