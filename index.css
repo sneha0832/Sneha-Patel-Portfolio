@@ -990,8 +990,8 @@ footer {
 
 /* Text */
 .polaroid-title {
-    font-family:  "Historia Sky", serif;
-    font-size: 30px;
+    font-family:  "IBM Plex Mono", monospace;
+    font-size: 21px;
     font-weight: 500;
     margin: 0;
 }
