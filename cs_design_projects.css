@@ -8,11 +8,12 @@ body {
 
 @font-face {
     font-family: "MyCustomFont";
-    src: url("historia_sky/Historia\ Sky.ttf") format("truetype")"),
-         url("fonts/MyFont-Regular.woff") format("woff");
-    font-style: normal;
+    src:
+      url("./fonts/Historia-Sky.woff2") format("woff2"),
+      url("./fonts/Historia-Sky.woff") format("woff"),
+      url("./fonts/Historia-Sky.ttf") format("truetype");
     font-display: swap;
-}
+  }
 * {
     cursor: url("images_1/cursor.png") , auto;
   }
