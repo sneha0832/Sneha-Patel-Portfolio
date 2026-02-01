@@ -70,7 +70,7 @@
         </header>
     </header>
 
-    <section class="section education-polaroid">
+    <section class="section education-polaroid" id="education">
         <h2 class="section-title">Education</h2>
     
         <div class="polaroid-wrapper">
@@ -140,7 +140,7 @@
                 </div>
                 <div class="project-content">
                     <h3>UTampa App</h3>
-                    <p>To empower gym-goers with personalized workout plans and progress tracking.</p>
+                    <p>To enhance the Utampa app by implementing accessibility features for better navigation.</p>
                 </div>
                 <img src="images_1/link.png" class="link_icon">
             </a>
@@ -153,7 +153,7 @@
         </div>
     </section>
 
-    <section class="section-skills-container">
+    <section class="section-skills-container" id="skills">
 
         <div class="skill-center-content">
             <h1 class="skill-title">What I bring to<br>the table</h1>
@@ -185,9 +185,9 @@
     <section class="section about">
         <h2 class="section-title">About Me</h2>
         <div class="about-text">
-            <p>I am a <span >Computer Science </span>major with a minor in New Media at the University of Tampa, with a strong interest in creating thoughtful, user-centered digital experiences. <br><br>
-                I serve as the President of the Girls Who Code club at my university, where I enjoy organizing design workshops, coding sessions, interview preparation events, and collaborative learning spaces. <br><br>
-                I'm passionate about UX design and frontend development, including user research, wireframing, prototyping, and building interactive interfaces, and I enjoy exploring how technology and design come together to solve real problems.<br><br>
+            <p>I am a <strong> Computer Science </strong>major with a minor in <strong>New Media</strong> at the <strong>University of Tampa</strong>, with a strong interest in creating thoughtful, user-centered digital experiences. <br><br>
+                I serve as the <strong>President of the Girls Who Code club</strong> at my university, where I enjoy organizing design workshops, coding sessions, interview preparation events, and collaborative learning spaces. <br><br>
+                I'm passionate about <strong>UX design</strong> and <strong>frontend development</strong>, including user research, wireframing, prototyping, and building interactive interfaces, and I enjoy exploring how technology and design come together to solve real problems.<br><br>
                 Design, for me, is about crafting experiences that people enjoy and understand effortlessly.</p>
         </div>
     </section>
@@ -196,6 +196,25 @@
     <footer>
         <p>© 2026 Designed by Sneha Patel</p>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+      
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("open");
+          mobileMenu.classList.toggle("show");
+        });
+      
+        document.querySelectorAll(".mobile-menu a").forEach(link => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("open");
+            mobileMenu.classList.remove("show");
+          });
+        });
+      </script>
+      
+      
 
 </body>
 </html>

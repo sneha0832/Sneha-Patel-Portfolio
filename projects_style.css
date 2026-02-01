@@ -5,6 +5,9 @@
     --serif-font: 'Playfair Display', serif;
     --sans-font: 'Inter', sans-serif;
 }
+* {
+    cursor: url("images_1/cursor.png") , auto;
+  }
 
 html {
     overflow-x: hidden;

@@ -14,7 +14,7 @@ body {
       url("historia_sky/Historia_Sky.ttf") format("truetype");
     font-display: swap;
   }
-* {
+  * {
     cursor: url("images_1/cursor.png") , auto;
   }
 
@@ -35,6 +35,7 @@ body {
     height: 20px;
     padding: 10px 20px;
     top: 2%;
+    z-index: 5;
     left: 2%;
 }
 
