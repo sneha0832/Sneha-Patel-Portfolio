@@ -62,8 +62,9 @@ h1 {
 .btn {
     background: white;
     border: 1px solid #ddd;
-    padding: 12px 30px;
-    margin: 0 10px;
+    width: 250px;
+    padding: 12px 20px;
+    margin: 10px 10px;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s;
@@ -118,6 +119,7 @@ h1 {
     display: flex;
     padding-right: 25px;
     padding-left: 25px;
+    padding-top: 25px;
     border-radius: 20px;
     align-items: center;
     text-align: left;
@@ -172,39 +174,10 @@ h1 {
     transform: translateY(-2px);
 }
 
-
-/* Base style for icons: Hidden and centered behind the card 
-.pop-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30px;
-    opacity: 0;
-    z-index: 1;transform: translate(-50%, -50%) scale(0.8);
-    transition: transform 0.6s ease, opacity 0.4s ease;
-    pointer-events: none;
-    transition: all 0.6s ease;
-}
-
-.project-card .icon-1 {
-    transform: translate(150%, -600%) scale(1);
-    opacity: 1;
-}
-
-.project-card .icon-2 {
-    transform: translate(0%, -400%) scale(1);
-    opacity: 1;
-}
-
-.project-card .icon-3 {
-    transform: translate(270%, -400%) scale(1);
-    opacity: 1;
-}
-
-*/
 footer {
     font-family: "IBM Plex Mono", monospace;
-    padding: 40px;
+    bottom: auto;
+    padding: 20px;
     font-size: 0.8rem;
     opacity: 0.7;
     text-align: center;
