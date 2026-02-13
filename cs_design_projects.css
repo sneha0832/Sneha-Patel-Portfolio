@@ -71,7 +71,13 @@ h1 {
     font-family: "IBM Plex Mono", monospace;
     font-size: 15px;
     font-weight: bolder;
+    color: black;              /* ADD THIS */
+    text-decoration: none;
 }
+button.btn {
+    color: black !important;
+}
+
 
 .btn.active {
     background-color: #C6E2FF; /* Light blue from Figma */
@@ -161,12 +167,12 @@ h1 {
 
 .project-link {
     text-decoration: none;
-    color: inherit;          /* THIS fixes the blue */
+    color: black;          /* THIS fixes the blue */
     display: block;
 }
 
 .project-link * {
-    color: inherit;          /* forces all child text to inherit */
+    color: black;          /* forces all child text to inherit */
 }
 
 .project-link:hover .project-card {
