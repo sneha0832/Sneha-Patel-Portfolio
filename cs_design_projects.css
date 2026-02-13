@@ -72,7 +72,6 @@ h1 {
     font-size: 15px;
     font-weight: bolder;
     color: black;              /* ADD THIS */
-    text-decoration: none;
 }
 button.btn {
     color: black !important;
